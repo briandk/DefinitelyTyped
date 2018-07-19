@@ -520,6 +520,33 @@ declare namespace videojs {
 		label?: string;
 		language?: string;
 		enabled?: boolean;
+	interface PlayerOptions {
+		aspectRatio?: string;
+		autoplay?: boolean;
+		autoSetup?: boolean;
+		children?: string[];
+		controls?: boolean;
+		defaultVolume?: number;
+		fluid?: boolean;
+		height?: number;
+		html5?: any;
+		inactivityTimeout?: number;
+		language?: string;
+		languages?: { [key: string]: string };
+		loop?: boolean;
+		muted?: boolean;
+		nativeControlsForTouch?: boolean;
+		notSupportedMessage?: string;
+		playbackRates?: Array<number>;
+		plugins?: any;
+		poster?: string;
+		preload?: string;
+		sourceOrder?: boolean;
+		sources?: Source[];
+		src?: string;
+		techCanOverridePoster?: boolean;
+		techOrder?: string[];
+		width?: number;
 	}
 
 	namespace AudioTrack {
