@@ -514,39 +514,12 @@ declare namespace videojs {
 	 *        If this track is the one that is currently playing. If this track is part of
 	 *        an {@link AudioTrackList}, only one {@link AudioTrack} will be enabled.
 	 */
-	interface AudioTrackOptions {
-		kind?: AudioTrack.Kind;
-		id?: string;
-		label?: string;
-		language?: string;
-		enabled?: boolean;
-	interface PlayerOptions {
-		aspectRatio?: string;
-		autoplay?: boolean;
-		autoSetup?: boolean;
-		children?: string[];
-		controls?: boolean;
-		defaultVolume?: number;
-		fluid?: boolean;
-		height?: number;
-		html5?: any;
-		inactivityTimeout?: number;
-		language?: string;
-		languages?: { [key: string]: string };
-		loop?: boolean;
-		muted?: boolean;
-		nativeControlsForTouch?: boolean;
-		notSupportedMessage?: string;
-		playbackRates?: Array<number>;
-		plugins?: any;
-		poster?: string;
-		preload?: string;
-		sourceOrder?: boolean;
-		sources?: Source[];
-		src?: string;
-		techCanOverridePoster?: boolean;
-		techOrder?: string[];
-		width?: number;
+ interface AudioTrackOptions {
+ 		kind?: AudioTrack.Kind;
+ 		id?: string;
+ 		label?: string;
+ 		language?: string;
+ 		enabled?: boolean;
 	}
 
 	namespace AudioTrack {
