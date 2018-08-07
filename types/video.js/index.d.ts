@@ -4561,7 +4561,6 @@ declare namespace videojs {
 		aspectRatio?: string;
 		autoplay?: boolean | string;
 		controlBar?: ControlBarOptions | false;
-		textTrackSettings?: TextTrackSettingsOptions;
 		controls?: boolean;
 		defaultVolume?: number;
 		fluid?: boolean;
@@ -4580,6 +4579,7 @@ declare namespace videojs {
 		sources?: Tech.SourceObject[];
 		src?: string;
 		techOrder?: string[];
+		textTrackSettings?: TextTrackSettingsOptions;
 		tracks?: TextTrackOptions[];
 		width?: number;
 	}
